@@ -294,7 +294,7 @@ exp_selectors:
 - voic
 - velc
 - brec
-exp_primary: 0
+exp_primary: 6
 exp_secondary: 8
 key: 11
 time_signatures:
@@ -2108,7 +2108,6 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions:
     - {index: 0, abbr: clr, value: 2}
-    - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
   - position: 60960
     duration: 1920
@@ -2614,7 +2613,7 @@ voice_parts:
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
   - position: 92880
-    duration: 2160
+    duration: 1680
     tone: 59
     lyric: yi
     pitch:
@@ -2906,7 +2905,7 @@ voice_parts:
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
   - position: 104160
-    duration: 240
+    duration: 480
     tone: 71
     lyric: tong
     pitch:
@@ -2919,7 +2918,7 @@ voice_parts:
     - {index: 0, abbr: clr, value: 2}
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
-  - position: 104400
+  - position: 104640
     duration: 240
     tone: 71
     lyric: ku
@@ -2933,7 +2932,7 @@ voice_parts:
     - {index: 0, abbr: clr, value: 2}
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
-  - position: 104640
+  - position: 104880
     duration: 240
     tone: 68
     lyric: dou
@@ -2947,7 +2946,7 @@ voice_parts:
     - {index: 0, abbr: clr, value: 2}
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
-  - position: 104880
+  - position: 105120
     duration: 240
     tone: 66
     lyric: liu
@@ -2961,7 +2960,7 @@ voice_parts:
     - {index: 0, abbr: clr, value: 2}
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
-  - position: 105120
+  - position: 105360
     duration: 240
     tone: 78
     lyric: zai
@@ -2975,7 +2974,7 @@ voice_parts:
     - {index: 0, abbr: clr, value: 2}
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
-  - position: 105360
+  - position: 105600
     duration: 480
     tone: 80
     lyric: xin
@@ -2989,7 +2988,7 @@ voice_parts:
     - {index: 0, abbr: clr, value: 2}
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
-  - position: 105840
+  - position: 106080
     duration: 480
     tone: 80
     lyric: li
@@ -3003,7 +3002,7 @@ voice_parts:
     - {index: 0, abbr: clr, value: 2}
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
-  - position: 106320
+  - position: 106560
     duration: 240
     tone: 71
     lyric: ye
@@ -3017,7 +3016,7 @@ voice_parts:
     - {index: 0, abbr: clr, value: 2}
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
-  - position: 106560
+  - position: 106800
     duration: 240
     tone: 71
     lyric: bu
@@ -3031,7 +3030,7 @@ voice_parts:
     - {index: 0, abbr: clr, value: 2}
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
-  - position: 106800
+  - position: 107040
     duration: 240
     tone: 73
     lyric: yuan
@@ -3045,7 +3044,7 @@ voice_parts:
     - {index: 0, abbr: clr, value: 2}
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
-  - position: 107040
+  - position: 107280
     duration: 240
     tone: 75
     lyric: wang
@@ -3059,7 +3058,7 @@ voice_parts:
     - {index: 0, abbr: clr, value: 2}
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
-  - position: 107280
+  - position: 107520
     duration: 480
     tone: 78
     lyric: ji
@@ -3073,7 +3072,7 @@ voice_parts:
     - {index: 0, abbr: clr, value: 2}
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
-  - position: 107760
+  - position: 108000
     duration: 240
     tone: 78
     lyric: ni
@@ -3087,7 +3086,7 @@ voice_parts:
     - {index: 0, abbr: clr, value: 2}
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
-  - position: 108000
+  - position: 108240
     duration: 240
     tone: 78
     lyric: de
@@ -3101,7 +3100,7 @@ voice_parts:
     - {index: 0, abbr: clr, value: 2}
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
-  - position: 108240
+  - position: 108480
     duration: 480
     tone: 71
     lyric: yan
@@ -3115,7 +3114,7 @@ voice_parts:
     - {index: 0, abbr: clr, value: 2}
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
-  - position: 108720
+  - position: 108960
     duration: 1200
     tone: 73
     lyric: jing
@@ -3129,8 +3128,8 @@ voice_parts:
     - {index: 0, abbr: clr, value: 2}
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
-  - position: 109920
-    duration: 960
+  - position: 110160
+    duration: 720
     tone: 71
     lyric: +
     pitch:
@@ -3278,7 +3277,8 @@ voice_parts:
       - {x: 40, y: 0, shape: io}
       snap_first: true
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
-    phoneme_expressions: []
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
     phoneme_overrides: []
   - position: 114240
     duration: 240
@@ -3878,7 +3878,7 @@ voice_parts:
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
   - position: 130800
-    duration: 720
+    duration: 480
     tone: 78
     lyric: wo
     pitch:
@@ -3891,7 +3891,7 @@ voice_parts:
     - {index: 0, abbr: clr, value: 2}
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
-  - position: 131520
+  - position: 131280
     duration: 240
     tone: 75
     lyric: qian
@@ -3905,7 +3905,7 @@ voice_parts:
     - {index: 0, abbr: clr, value: 2}
     - {index: 1, abbr: clr, value: 2}
     phoneme_overrides: []
-  - position: 131760
+  - position: 131520
     duration: 240
     tone: 73
     lyric: +
@@ -3918,7 +3918,7 @@ voice_parts:
     phoneme_expressions:
     - {index: 0, abbr: clr, value: 2}
     phoneme_overrides: []
-  - position: 132000
+  - position: 131760
     duration: 1920
     tone: 73
     lyric: xing
@@ -4581,16 +4581,9 @@ voice_parts:
     - 28995
     - 29015
     - 29345
-    - 29590
-    - 29700
-    - 29785
-    - 29790
-    - 29965
-    - 29985
-    - 30225
-    - 30230
-    - 69140
-    - 69145
+    - 64020
+    - 64025
+    - 69470
     ys:
     - 0
     - -32
@@ -4758,14 +4751,7 @@ voice_parts:
     - -25
     - -24
     - -24
-    - -23
-    - -23
-    - -22
-    - -22
-    - -21
-    - -21
-    - -20
-    - -20
+    - 0
     - 0
     abbr: tenc
   - xs:
