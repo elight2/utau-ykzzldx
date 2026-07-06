@@ -1,0 +1,5554 @@
+﻿name: New Project
+comment: ""
+output_dir: Vocal
+cache_dir: UCache
+ustx_version: "0.7"
+resolution: 480
+bpm: 120
+beat_per_bar: 4
+beat_unit: 4
+expressions:
+  dyn:
+    name: dynamics (curve)
+    abbr: dyn
+    type: Curve
+    min: -240
+    max: 120
+    default_value: 0
+    is_flag: false
+    flag: ""
+  pitd:
+    name: pitch deviation (curve)
+    abbr: pitd
+    type: Curve
+    min: -1200
+    max: 1200
+    default_value: 0
+    is_flag: false
+    flag: ""
+  clr:
+    name: voice color
+    abbr: clr
+    type: Options
+    min: 0
+    max: 0
+    default_value: 0
+    is_flag: false
+    options:
+    - ""
+  eng:
+    name: resampler engine
+    abbr: eng
+    type: Options
+    min: 0
+    max: 1
+    default_value: 0
+    is_flag: false
+    options:
+    - ""
+    - worldline
+  vel:
+    name: velocity
+    abbr: vel
+    type: Numerical
+    min: 0
+    max: 200
+    default_value: 100
+    is_flag: false
+    flag: ""
+  vol:
+    name: volume
+    abbr: vol
+    type: Numerical
+    min: 0
+    max: 200
+    default_value: 100
+    is_flag: false
+    flag: ""
+  atk:
+    name: attack
+    abbr: atk
+    type: Numerical
+    min: 0
+    max: 200
+    default_value: 100
+    is_flag: false
+    flag: ""
+  dec:
+    name: decay
+    abbr: dec
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  velc:
+    name: velocity (curve)
+    abbr: velc
+    type: Curve
+    min: 0
+    max: 200
+    default_value: 100
+    is_flag: false
+    flag: ""
+  ene:
+    name: energy (curve)
+    abbr: ene
+    type: Curve
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  pexp:
+    name: pitch expressiveness (curve)
+    abbr: pexp
+    type: Curve
+    min: 0
+    max: 100
+    default_value: 100
+    is_flag: false
+    flag: ""
+  cl01:
+    name: voice color 00 - 昭（Normal）
+    abbr: cl01
+    type: Curve
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  cl02:
+    name: voice color 01 - 晓（Sweet）
+    abbr: cl02
+    type: Curve
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  cl03:
+    name: voice color 02 - 晌（Power）
+    abbr: cl03
+    type: Curve
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  cl04:
+    name: voice color 03 - 暮（Whisper）
+    abbr: cl04
+    type: Curve
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  cl05:
+    name: voice color 04 - 曦（Opera）
+    abbr: cl05
+    type: Curve
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  gen:
+    name: gender
+    abbr: gen
+    type: Numerical
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: g
+  genc:
+    name: gender (curve)
+    abbr: genc
+    type: Curve
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  bre:
+    name: breath
+    abbr: bre
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: B
+  brec:
+    name: breathiness (curve)
+    abbr: brec
+    type: Curve
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  lpf:
+    name: lowpass
+    abbr: lpf
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: H
+  norm:
+    name: normalize
+    abbr: norm
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 86
+    is_flag: true
+    flag: P
+  mod:
+    name: modulation
+    abbr: mod
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  mod+:
+    name: modulation plus
+    abbr: mod+
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  alt:
+    name: alternate
+    abbr: alt
+    type: Numerical
+    min: 0
+    max: 16
+    default_value: 0
+    is_flag: false
+    flag: ""
+  dir:
+    name: direct
+    abbr: dir
+    type: Options
+    min: 0
+    max: 1
+    default_value: 0
+    is_flag: false
+    options:
+    - off
+    - on
+  shft:
+    name: tone shift
+    abbr: shft
+    type: Numerical
+    min: -36
+    max: 36
+    default_value: 0
+    is_flag: false
+    flag: ""
+  shfc:
+    name: tone shift (curve)
+    abbr: shfc
+    type: Curve
+    min: -1200
+    max: 1200
+    default_value: 0
+    is_flag: false
+    flag: ""
+  tenc:
+    name: tension (curve)
+    abbr: tenc
+    type: Curve
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  voic:
+    name: voicing (curve)
+    abbr: voic
+    type: Curve
+    min: 0
+    max: 100
+    default_value: 100
+    is_flag: false
+    flag: ""
+exp_selectors:
+- dyn
+- ene
+- velc
+- genc
+- brec
+- shfc
+- tenc
+- voic
+- velc
+- brec
+exp_primary: 0
+exp_secondary: 8
+key: 11
+time_signatures:
+- bar_position: 0
+  beat_per_bar: 4
+  beat_unit: 4
+tempos:
+- position: 0
+  bpm: 110
+tracks:
+- singer: DongFangZhiZi_Nectar_DiffSinger_CE_26.06.06
+  phonemizer: OpenUtau.Core.DiffSinger.DiffSingerChinesePhonemizer
+  renderer_settings:
+    renderer: DIFFSINGER
+  track_name: Track1
+  track_color: Blue
+  mute: false
+  solo: false
+  volume: 9.951219512195124
+  pan: -7.105427357601002E-13
+  track_expressions: []
+  voice_color_names:
+  - 00 - 昭（Normal）
+  - 01 - 晓（Sweet）
+  - 02 - 晌（Power）
+  - 03 - 暮（Whisper）
+  - 04 - 曦（Opera）
+- phonemizer: OpenUtau.Core.DefaultPhonemizer
+  renderer_settings: {}
+  track_name: Track6
+  track_color: Blue
+  mute: false
+  solo: false
+  volume: -4.975609756097558
+  pan: 0
+  track_expressions: []
+  voice_color_names:
+  - ""
+voice_parts:
+- duration: 206880
+  name: New Part
+  comment: ""
+  track_no: 0
+  position: 17760
+  notes:
+  - position: 1440
+    duration: 210
+    tone: 63
+    lyric: ye
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 81.818184, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 1650
+    duration: 240
+    tone: 61
+    lyric: kong
+    pitch:
+      data:
+      - {x: -40.00001, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 1890
+    duration: 240
+    tone: 63
+    lyric: zhong
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 2130
+    duration: 240
+    tone: 61
+    lyric: zui
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 2370
+    duration: 240
+    tone: 63
+    lyric: liang
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 2610
+    duration: 270
+    tone: 66
+    lyric: de
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 5.681815, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 2880
+    duration: 1920
+    tone: 66
+    lyric: xing
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 5040
+    duration: 240
+    tone: 54
+    lyric: neng
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 5280
+    duration: 720
+    tone: 59
+    lyric: fou
+    pitch:
+      data:
+      - {x: -40, y: -50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 6000
+    duration: 480
+    tone: 61
+    lyric: ting
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 6480
+    duration: 2160
+    tone: 59
+    lyric: qing
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 8880
+    duration: 240
+    tone: 59
+    lyric: na
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 9120
+    duration: 240
+    tone: 59
+    lyric: yang
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 9360
+    duration: 240
+    tone: 61
+    lyric: wang
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 9600
+    duration: 240
+    tone: 63
+    lyric: de
+    pitch:
+      data:
+      - {x: -167.04546, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 9840
+    duration: 720
+    tone: 59
+    lyric: ren
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 10800
+    duration: 240
+    tone: 56
+    lyric: xin
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 11040
+    duration: 240
+    tone: 59
+    lyric: di
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 11280
+    duration: 240
+    tone: 61
+    lyric: de
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 11520
+    duration: 240
+    tone: 63
+    lyric: gu
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 11760
+    duration: 720
+    tone: 59
+    lyric: du
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 119.31819, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 12480
+    duration: 720
+    tone: 56
+    lyric: he
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 73.86364, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 13200
+    duration: 720
+    tone: 61
+    lyric: tan
+    pitch:
+      data:
+      - {x: -40, y: -50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 13920
+    duration: 1440
+    tone: 63
+    lyric: xi
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 16560
+    duration: 240
+    tone: 54
+    lyric: o
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 16800
+    duration: 240
+    tone: 63
+    lyric: ye
+    pitch:
+      data:
+      - {x: -40, y: -90, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 17040
+    duration: 240
+    tone: 61
+    lyric: kong
+    pitch:
+      data:
+      - {x: -40.00001, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 17280
+    duration: 240
+    tone: 63
+    lyric: zhong
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 17520
+    duration: 240
+    tone: 61
+    lyric: zui
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 17760
+    duration: 240
+    tone: 63
+    lyric: liang
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 18000
+    duration: 270
+    tone: 66
+    lyric: de
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 5.681818, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 18270
+    duration: 1920
+    tone: 66
+    lyric: xing
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 20430
+    duration: 240
+    tone: 54
+    lyric: neng
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 100, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 20670
+    duration: 720
+    tone: 59
+    lyric: fou
+    pitch:
+      data:
+      - {x: -40, y: -50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 21390
+    duration: 720
+    tone: 61
+    lyric: ji
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 114.77273, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 22110
+    duration: 1890
+    tone: 59
+    lyric: qi
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 24240
+    duration: 240
+    tone: 59
+    lyric: ceng
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 24480
+    duration: 240
+    tone: 59
+    lyric: yu
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 24720
+    duration: 270
+    tone: 61
+    lyric: wo
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 24990
+    duration: 240
+    tone: 63
+    lyric: tong
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 25230
+    duration: 720
+    tone: 59
+    lyric: xing
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 26160
+    duration: 240
+    tone: 56
+    lyric: xiao
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 26400
+    duration: 270
+    tone: 61
+    lyric: shi
+    pitch:
+      data:
+      - {x: -40, y: -50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 26670
+    duration: 240
+    tone: 61
+    lyric: zai
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 26910
+    duration: 240
+    tone: 63
+    lyric: feng
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 27150
+    duration: 690
+    tone: 59
+    lyric: li
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 39.999985, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 27840
+    duration: 480
+    tone: 56
+    lyric: de
+    pitch:
+      data:
+      - {x: -72.72728, y: 30, shape: io}
+      - {x: 73.86364, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 28320
+    duration: 720
+    tone: 66
+    lyric: shen
+    pitch:
+      data:
+      - {x: -40, y: -100, shape: io}
+      - {x: 146.59091, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 29040
+    duration: 960
+    tone: 63
+    lyric: ying
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 30000
+    duration: 480
+    tone: 64
+    lyric: +
+    pitch:
+      data:
+      - {x: -102.27273, y: -10, shape: io}
+      - {x: 112.5, y: -0.6439394, shape: io}
+      - {x: 213.63637, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 30480
+    duration: 600
+    tone: 66
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 97.72727, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 31200
+    duration: 240
+    tone: 66
+    lyric: wo
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 31440
+    duration: 240
+    tone: 75
+    lyric: qi
+    pitch:
+      data:
+      - {x: -40, y: -90, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 31680
+    duration: 480
+    tone: 73
+    lyric: dao
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 32160
+    duration: 480
+    tone: 71
+    lyric: yong
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 32640
+    duration: 480
+    tone: 71
+    lyric: you
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 33120
+    duration: 480
+    tone: 71
+    lyric: yi
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 33600
+    duration: 240
+    tone: 71
+    lyric: ke
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 33840
+    duration: 240
+    tone: 68
+    lyric: tou
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 34080
+    duration: 240
+    tone: 66
+    lyric: ming
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 34320
+    duration: 240
+    tone: 78
+    lyric: de
+    pitch:
+      data:
+      - {x: -40, y: -120, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 34560
+    duration: 480
+    tone: 80
+    lyric: xin
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 35040
+    duration: 720
+    tone: 80
+    lyric: ling
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 35760
+    duration: 240
+    tone: 71
+    lyric: he
+    pitch:
+      data:
+      - {x: -40, y: 90, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 36000
+    duration: 240
+    tone: 73
+    lyric: hui
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 36240
+    duration: 240
+    tone: 75
+    lyric: liu
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 36480
+    duration: 480
+    tone: 78
+    lyric: lei
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 36960
+    duration: 480
+    tone: 78
+    lyric: de
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 37440
+    duration: 480
+    tone: 71
+    lyric: yan
+    pitch:
+      data:
+      - {x: -40, y: 70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 37920
+    duration: 1200
+    tone: 73
+    lyric: jing
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 39120
+    duration: 960
+    tone: 71
+    lyric: +
+    pitch:
+      data:
+      - {x: -65.90909, y: 20, shape: io}
+      - {x: 65.90909, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 40560
+    duration: 240
+    tone: 71
+    lyric: gei
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 40800
+    duration: 240
+    tone: 71
+    lyric: wo
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 41040
+    duration: 240
+    tone: 71
+    lyric: zai
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 41280
+    duration: 240
+    tone: 71
+    lyric: qu
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 41520
+    duration: 240
+    tone: 68
+    lyric: xiang
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 41760
+    duration: 240
+    tone: 66
+    lyric: xin
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 42000
+    duration: 240
+    tone: 78
+    lyric: de
+    pitch:
+      data:
+      - {x: -40, y: -120, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 42240
+    duration: 480
+    tone: 80
+    lyric: yong
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 42720
+    duration: 480
+    tone: 80
+    lyric: qi
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 43200
+    duration: 240
+    tone: 71
+    lyric: o
+    pitch:
+      data:
+      - {x: -40, y: 90, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 43440
+    duration: 240
+    tone: 71
+    lyric: yue
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 43680
+    duration: 240
+    tone: 73
+    lyric: guo
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 43920
+    duration: 240
+    tone: 75
+    lyric: huang
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 44160
+    duration: 480
+    tone: 78
+    lyric: yan
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 44640
+    duration: 240
+    tone: 78
+    lyric: qu
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 44880
+    duration: 240
+    tone: 78
+    lyric: yong
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 45120
+    duration: 480
+    tone: 75
+    lyric: bao
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 13.636364, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 45600
+    duration: 240
+    tone: 73
+    lyric: +
+    pitch:
+      data:
+      - {x: -39.772728, y: 20, shape: io}
+      - {x: 11.363636, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 45840
+    duration: 960
+    tone: 73
+    lyric: ni
+    pitch:
+      data:
+      - {x: -28.40909, y: 0, shape: io}
+      - {x: 73.86364, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 46800
+    duration: 240
+    tone: 75
+    lyric: mei
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 47040
+    duration: 480
+    tone: 73
+    lyric: dang
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 47520
+    duration: 720
+    tone: 71
+    lyric: wo
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 48240
+    duration: 480
+    tone: 71
+    lyric: zhao
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 48720
+    duration: 240
+    tone: 71
+    lyric: bu
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 48960
+    duration: 240
+    tone: 71
+    lyric: dao
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 49200
+    duration: 240
+    tone: 68
+    lyric: cun
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 49440
+    duration: 240
+    tone: 66
+    lyric: zai
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 49680
+    duration: 240
+    tone: 78
+    lyric: de
+    pitch:
+      data:
+      - {x: -40, y: -120, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 49920
+    duration: 480
+    tone: 80
+    lyric: yi
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 50400
+    duration: 480
+    tone: 80
+    lyric: yi
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 50880
+    duration: 240
+    tone: 71
+    lyric: mei
+    pitch:
+      data:
+      - {x: -40, y: 90, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 51120
+    duration: 240
+    tone: 71
+    lyric: dang
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 51360
+    duration: 240
+    tone: 73
+    lyric: wo
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 51600
+    duration: 240
+    tone: 75
+    lyric: mi
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 51840
+    duration: 480
+    tone: 78
+    lyric: shi
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 52320
+    duration: 240
+    tone: 78
+    lyric: zai
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 52560
+    duration: 240
+    tone: 78
+    lyric: hei
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 52800
+    duration: 480
+    tone: 71
+    lyric: ye
+    pitch:
+      data:
+      - {x: -40, y: 70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 53280
+    duration: 1200
+    tone: 73
+    lyric: li
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 54720
+    duration: 240
+    tone: 73
+    lyric: o
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 54960
+    duration: 240
+    tone: 75
+    lyric: o
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 55200
+    duration: 720
+    tone: 71
+    lyric: o
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 55920
+    duration: 240
+    tone: 71
+    lyric: ye
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 56160
+    duration: 240
+    tone: 71
+    lyric: kong
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 56400
+    duration: 720
+    tone: 71
+    lyric: zhong
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 57120
+    duration: 240
+    tone: 68
+    lyric: zui
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 57360
+    duration: 240
+    tone: 78
+    lyric: liang
+    pitch:
+      data:
+      - {x: -40, y: -100, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 57600
+    duration: 480
+    tone: 80
+    lyric: de
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 58080
+    duration: 720
+    tone: 80
+    lyric: xing
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 58800
+    duration: 240
+    tone: 71
+    lyric: qing
+    pitch:
+      data:
+      - {x: -40, y: 90, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 59040
+    duration: 240
+    tone: 73
+    lyric: zhi
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 59280
+    duration: 240
+    tone: 75
+    lyric: yin
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 59520
+    duration: 480
+    tone: 78
+    lyric: wo
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 60000
+    duration: 480
+    tone: 78
+    lyric: kao
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 60480
+    duration: 240
+    tone: 75
+    lyric: jin
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 60720
+    duration: 240
+    tone: 73
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 60960
+    duration: 1920
+    tone: 73
+    lyric: ni
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 70950
+    duration: 240
+    tone: 63
+    lyric: ye
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 81.818184, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 71190
+    duration: 240
+    tone: 61
+    lyric: kong
+    pitch:
+      data:
+      - {x: -40.00001, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 71430
+    duration: 240
+    tone: 63
+    lyric: zhong
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 71670
+    duration: 240
+    tone: 61
+    lyric: zui
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 71910
+    duration: 240
+    tone: 63
+    lyric: liang
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 72150
+    duration: 270
+    tone: 66
+    lyric: de
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 5.681815, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 72420
+    duration: 1890
+    tone: 66
+    lyric: xing
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 74550
+    duration: 240
+    tone: 54
+    lyric: shi
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 74820
+    duration: 720
+    tone: 59
+    lyric: fou
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 75540
+    duration: 720
+    tone: 61
+    lyric: zhi
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 76260
+    duration: 2190
+    tone: 59
+    lyric: dao
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 78690
+    duration: 240
+    tone: 59
+    lyric: ceng
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 78930
+    duration: 240
+    tone: 59
+    lyric: yu
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 79170
+    duration: 240
+    tone: 61
+    lyric: wo
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 79410
+    duration: 240
+    tone: 63
+    lyric: tong
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 79650
+    duration: 720
+    tone: 59
+    lyric: xing
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 80580
+    duration: 240
+    tone: 56
+    lyric: de
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 80850
+    duration: 240
+    tone: 59
+    lyric: shen
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 81090
+    duration: 240
+    tone: 61
+    lyric: yin
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 81330
+    duration: 240
+    tone: 63
+    lyric: ru
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 81570
+    duration: 720
+    tone: 59
+    lyric: jin
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 119.31819, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 82500
+    duration: 240
+    tone: 56
+    lyric: zai
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 73.86364, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 82770
+    duration: 720
+    tone: 61
+    lyric: na
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 83490
+    duration: 1680
+    tone: 63
+    lyric: li
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 86820
+    duration: 240
+    tone: 54
+    lyric: o
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 93.18182, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 87060
+    duration: 240
+    tone: 63
+    lyric: ye
+    pitch:
+      data:
+      - {x: -40, y: -90, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 87300
+    duration: 240
+    tone: 61
+    lyric: kong
+    pitch:
+      data:
+      - {x: -40.00001, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 87540
+    duration: 240
+    tone: 63
+    lyric: zhong
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 87780
+    duration: 240
+    tone: 61
+    lyric: zui
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 88020
+    duration: 240
+    tone: 63
+    lyric: liang
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 88260
+    duration: 270
+    tone: 66
+    lyric: de
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 5.681818, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 88530
+    duration: 1890
+    tone: 66
+    lyric: xing
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 91170
+    duration: 240
+    tone: 54
+    lyric: shi
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 91440
+    duration: 720
+    tone: 59
+    lyric: fou
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 92160
+    duration: 720
+    tone: 61
+    lyric: zai
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 92880
+    duration: 2160
+    tone: 59
+    lyric: yi
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 95040
+    duration: 240
+    tone: 59
+    lyric: shi
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 95280
+    duration: 240
+    tone: 59
+    lyric: deng
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 95520
+    duration: 240
+    tone: 59
+    lyric: tai
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 95760
+    duration: 240
+    tone: 61
+    lyric: yang
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 96000
+    duration: 240
+    tone: 63
+    lyric: sheng
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 96240
+    duration: 720
+    tone: 59
+    lyric: qi
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 97200
+    duration: 240
+    tone: 56
+    lyric: hai
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 97440
+    duration: 240
+    tone: 61
+    lyric: shi
+    pitch:
+      data:
+      - {x: -40, y: -50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 97680
+    duration: 240
+    tone: 61
+    lyric: yi
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 97920
+    duration: 240
+    tone: 63
+    lyric: wai
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 98160
+    duration: 480
+    tone: 59
+    lyric: xian
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 98640
+    duration: 720
+    tone: 66
+    lyric: lai
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 99360
+    duration: 1680
+    tone: 63
+    lyric: lin
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 101040
+    duration: 240
+    tone: 64
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 101280
+    duration: 960
+    tone: 66
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 102240
+    duration: 240
+    tone: 66
+    lyric: wo
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 102480
+    duration: 240
+    tone: 75
+    lyric: ning
+    pitch:
+      data:
+      - {x: -40, y: -90, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 102720
+    duration: 480
+    tone: 73
+    lyric: yuan
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 103200
+    duration: 480
+    tone: 71
+    lyric: suo
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 103680
+    duration: 480
+    tone: 71
+    lyric: you
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 104160
+    duration: 240
+    tone: 71
+    lyric: tong
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 104400
+    duration: 240
+    tone: 71
+    lyric: ku
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 104640
+    duration: 240
+    tone: 68
+    lyric: dou
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 104880
+    duration: 240
+    tone: 66
+    lyric: liu
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 105120
+    duration: 240
+    tone: 78
+    lyric: zai
+    pitch:
+      data:
+      - {x: -40, y: -120, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 105360
+    duration: 480
+    tone: 80
+    lyric: xin
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 105840
+    duration: 480
+    tone: 80
+    lyric: li
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 106320
+    duration: 240
+    tone: 71
+    lyric: ye
+    pitch:
+      data:
+      - {x: -40, y: 90, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 106560
+    duration: 240
+    tone: 71
+    lyric: bu
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 106800
+    duration: 240
+    tone: 73
+    lyric: yuan
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 107040
+    duration: 240
+    tone: 75
+    lyric: wang
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 107280
+    duration: 480
+    tone: 78
+    lyric: ji
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 107760
+    duration: 240
+    tone: 78
+    lyric: ni
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 108000
+    duration: 240
+    tone: 78
+    lyric: de
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 108240
+    duration: 480
+    tone: 71
+    lyric: yan
+    pitch:
+      data:
+      - {x: -143.18182, y: 70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 108720
+    duration: 1200
+    tone: 73
+    lyric: jing
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 109920
+    duration: 960
+    tone: 71
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 111360
+    duration: 240
+    tone: 71
+    lyric: ge
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 111600
+    duration: 240
+    tone: 71
+    lyric: wo
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 111840
+    duration: 240
+    tone: 71
+    lyric: zai
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 112080
+    duration: 240
+    tone: 71
+    lyric: qu
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 112320
+    duration: 240
+    tone: 68
+    lyric: xiang
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 112560
+    duration: 240
+    tone: 66
+    lyric: xin
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 112800
+    duration: 240
+    tone: 78
+    lyric: de
+    pitch:
+      data:
+      - {x: -40, y: -120, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 113040
+    duration: 480
+    tone: 80
+    lyric: yong
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 113520
+    duration: 480
+    tone: 80
+    lyric: qi
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 114000
+    duration: 240
+    tone: 71
+    lyric: o
+    pitch:
+      data:
+      - {x: -40, y: 90, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 114240
+    duration: 240
+    tone: 71
+    lyric: yue
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 114480
+    duration: 240
+    tone: 73
+    lyric: guo
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 114720
+    duration: 240
+    tone: 75
+    lyric: huang
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 114960
+    duration: 480
+    tone: 78
+    lyric: yan
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 115440
+    duration: 240
+    tone: 78
+    lyric: qu
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 115680
+    duration: 240
+    tone: 78
+    lyric: yong
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 115920
+    duration: 480
+    tone: 75
+    lyric: bao
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 116400
+    duration: 240
+    tone: 73
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 116640
+    duration: 960
+    tone: 73
+    lyric: ni
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 117600
+    duration: 240
+    tone: 75
+    lyric: mei
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 117840
+    duration: 480
+    tone: 73
+    lyric: dang
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 118320
+    duration: 720
+    tone: 71
+    lyric: wo
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 119040
+    duration: 480
+    tone: 71
+    lyric: zhao
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 119520
+    duration: 240
+    tone: 71
+    lyric: bu
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 119760
+    duration: 240
+    tone: 71
+    lyric: dao
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 120000
+    duration: 240
+    tone: 68
+    lyric: cun
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 120240
+    duration: 240
+    tone: 66
+    lyric: zai
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 120480
+    duration: 240
+    tone: 78
+    lyric: de
+    pitch:
+      data:
+      - {x: -40, y: -120, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 120720
+    duration: 480
+    tone: 80
+    lyric: yi
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 121200
+    duration: 480
+    tone: 80
+    lyric: yi
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 121680
+    duration: 240
+    tone: 71
+    lyric: mei
+    pitch:
+      data:
+      - {x: -40, y: 90, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 121920
+    duration: 240
+    tone: 71
+    lyric: dang
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 122160
+    duration: 240
+    tone: 73
+    lyric: wo
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 122400
+    duration: 240
+    tone: 75
+    lyric: mi
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 122640
+    duration: 480
+    tone: 78
+    lyric: shi
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 123120
+    duration: 240
+    tone: 78
+    lyric: zai
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 123360
+    duration: 240
+    tone: 78
+    lyric: hei
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 123600
+    duration: 480
+    tone: 71
+    lyric: ye
+    pitch:
+      data:
+      - {x: -40, y: 70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 124080
+    duration: 1200
+    tone: 73
+    lyric: li
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 125520
+    duration: 240
+    tone: 73
+    lyric: o
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 125760
+    duration: 240
+    tone: 75
+    lyric: o
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 126000
+    duration: 720
+    tone: 71
+    lyric: o
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 126720
+    duration: 240
+    tone: 71
+    lyric: ye
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 126960
+    duration: 240
+    tone: 71
+    lyric: kong
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 127200
+    duration: 720
+    tone: 71
+    lyric: zhong
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 127920
+    duration: 240
+    tone: 68
+    lyric: zui
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 128160
+    duration: 240
+    tone: 78
+    lyric: liang
+    pitch:
+      data:
+      - {x: -40, y: -100, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 128400
+    duration: 480
+    tone: 80
+    lyric: de
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 128880
+    duration: 720
+    tone: 80
+    lyric: xing
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 129600
+    duration: 240
+    tone: 71
+    lyric: o
+    pitch:
+      data:
+      - {x: -40, y: 90, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 129840
+    duration: 240
+    tone: 73
+    lyric: qing
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 130080
+    duration: 240
+    tone: 75
+    lyric: zhao
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 130320
+    duration: 480
+    tone: 78
+    lyric: liang
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 130800
+    duration: 720
+    tone: 78
+    lyric: wo
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 131520
+    duration: 240
+    tone: 75
+    lyric: qian
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 131760
+    duration: 240
+    tone: 73
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    phoneme_overrides: []
+  - position: 132000
+    duration: 1920
+    tone: 73
+    lyric: xing
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: clr, value: 2}
+    - {index: 1, abbr: clr, value: 2}
+    phoneme_overrides: []
+  curves:
+  - xs: []
+    ys: []
+    abbr: pitd
+  - xs:
+    - -1360
+    - -1355
+    - 12335
+    - 12340
+    - 12365
+    - 12395
+    - 12405
+    - 12425
+    - 12480
+    - 12485
+    - 12505
+    - 12510
+    - 12535
+    - 12555
+    - 12560
+    - 12580
+    - 12585
+    - 12635
+    - 12640
+    - 12705
+    - 12865
+    - 12975
+    - 12985
+    - 13025
+    - 13065
+    - 13085
+    - 13115
+    - 13130
+    - 13140
+    - 13155
+    - 13220
+    - 13270
+    - 13280
+    - 13290
+    - 13295
+    - 13320
+    - 13325
+    - 13335
+    - 13370
+    - 13375
+    - 13385
+    - 13390
+    - 13410
+    - 13440
+    - 13460
+    - 13465
+    - 13475
+    - 13485
+    - 13490
+    - 13510
+    - 13520
+    - 20390
+    - 20395
+    - 20415
+    - 20430
+    - 20435
+    - 20455
+    - 20465
+    - 20480
+    - 20505
+    - 20515
+    - 20520
+    - 20525
+    - 20545
+    - 20550
+    - 20565
+    - 20585
+    - 20595
+    - 20625
+    - 20635
+    - 20640
+    - 20645
+    - 28280
+    - 28390
+    - 28600
+    - 28680
+    - 28710
+    - 28735
+    - 28965
+    - 28995
+    - 29080
+    - 29290
+    - 29345
+    - 29465
+    - 29500
+    - 29535
+    - 29565
+    - 29585
+    - 29600
+    - 29735
+    - 29760
+    - 29800
+    - 29825
+    - 29905
+    - 30215
+    - 30270
+    - 30365
+    - 30430
+    - 30580
+    - 30610
+    - 30675
+    - 30780
+    - 30815
+    - 30825
+    - 30890
+    - 30945
+    - 30975
+    - 30995
+    - 31060
+    - 31085
+    - 31105
+    - 31130
+    - 31150
+    - 31170
+    - 31205
+    - 31230
+    - 31255
+    - 31280
+    - 31315
+    - 31330
+    - 31350
+    - 31385
+    - 31470
+    - 31495
+    - 31545
+    - 31815
+    - 31880
+    - 31895
+    - 31940
+    - 32000
+    - 32015
+    - 32055
+    - 32070
+    - 32085
+    - 32110
+    - 32120
+    - 32170
+    - 32200
+    - 32210
+    - 32215
+    - 32250
+    - 32260
+    - 32295
+    - 32300
+    - 32325
+    - 32375
+    - 32415
+    - 32420
+    - 60960
+    - 60965
+    - 60985
+    - 61035
+    - 61085
+    - 61255
+    - 61280
+    - 61300
+    - 61330
+    - 61365
+    - 61380
+    - 61415
+    - 61460
+    - 61480
+    - 61495
+    - 61515
+    - 61530
+    - 61555
+    - 61605
+    - 61625
+    - 61685
+    - 61770
+    - 61790
+    - 61805
+    - 61885
+    - 61895
+    - 61910
+    - 61920
+    - 61930
+    - 61965
+    - 61990
+    - 62090
+    - 62195
+    - 62205
+    - 62295
+    - 62305
+    - 62390
+    - 62405
+    - 62540
+    - 62560
+    - 62600
+    - 62610
+    - 62615
+    - 62670
+    - 62680
+    - 62720
+    - 62735
+    - 62775
+    - 62780
+    - 62795
+    - 62825
+    - 62835
+    - 62840
+    - 62900
+    - 62905
+    - 62930
+    - 62935
+    - 62945
+    - 62955
+    - 62960
+    ys:
+    - 0
+    - -80
+    - -80
+    - -87
+    - -94
+    - -98
+    - -100
+    - -100
+    - -106
+    - -107
+    - -108
+    - -109
+    - -110
+    - -110
+    - -112
+    - -112
+    - -114
+    - -114
+    - -115
+    - -116
+    - -116
+    - -115
+    - -114
+    - -114
+    - -112
+    - -112
+    - -110
+    - -110
+    - -109
+    - -109
+    - -106
+    - -102
+    - -102
+    - -101
+    - -100
+    - -100
+    - -99
+    - -97
+    - -97
+    - -96
+    - -96
+    - -94
+    - -94
+    - -90
+    - -89
+    - -88
+    - -88
+    - -87
+    - -84
+    - -84
+    - -80
+    - -80
+    - 54
+    - 49
+    - 42
+    - 42
+    - 34
+    - 27
+    - 21
+    - 5
+    - 2
+    - -3
+    - -5
+    - -13
+    - -14
+    - -23
+    - -36
+    - -44
+    - -60
+    - -68
+    - -70
+    - -80
+    - -80
+    - -79
+    - -73
+    - -73
+    - -72
+    - -71
+    - -71
+    - -70
+    - -70
+    - -66
+    - -64
+    - -64
+    - -63
+    - -63
+    - -62
+    - -62
+    - -61
+    - -61
+    - -60
+    - -60
+    - -59
+    - -59
+    - -53
+    - -53
+    - -50
+    - -50
+    - -46
+    - -44
+    - -44
+    - -40
+    - -40
+    - -39
+    - -39
+    - -37
+    - -37
+    - -36
+    - -35
+    - -34
+    - -34
+    - -33
+    - -33
+    - -32
+    - -32
+    - -31
+    - -31
+    - -30
+    - -30
+    - -29
+    - -29
+    - -27
+    - -26
+    - -26
+    - -24
+    - -19
+    - -17
+    - -16
+    - -16
+    - -14
+    - -13
+    - -13
+    - -12
+    - -12
+    - -11
+    - -10
+    - -10
+    - -8
+    - -8
+    - -7
+    - -7
+    - -5
+    - -5
+    - -4
+    - -4
+    - -1
+    - -1
+    - 0
+    - 0
+    - -3
+    - -6
+    - -12
+    - -17
+    - -33
+    - -36
+    - -37
+    - -41
+    - -44
+    - -46
+    - -48
+    - -53
+    - -54
+    - -56
+    - -57
+    - -59
+    - -61
+    - -64
+    - -66
+    - -70
+    - -75
+    - -76
+    - -78
+    - -82
+    - -83
+    - -83
+    - -84
+    - -84
+    - -87
+    - -88
+    - -96
+    - -102
+    - -103
+    - -108
+    - -109
+    - -113
+    - -113
+    - -122
+    - -123
+    - -126
+    - -126
+    - -127
+    - -129
+    - -130
+    - -131
+    - -133
+    - -134
+    - -135
+    - -135
+    - -137
+    - -137
+    - -138
+    - -140
+    - -141
+    - -141
+    - -142
+    - -142
+    - -143
+    - 0
+    abbr: dyn
+  - xs: []
+    ys: []
+    abbr: ene
+  - xs:
+    - 16465
+    - 16470
+    - 16485
+    - 16495
+    - 16500
+    - 16505
+    - 16520
+    - 16525
+    - 16530
+    - 16535
+    - 16575
+    - 16765
+    - 16845
+    - 16865
+    - 16870
+    - 16920
+    - 16940
+    - 16945
+    - 16965
+    - 16970
+    - 16990
+    - 16995
+    - 17025
+    - 17045
+    - 17070
+    - 17075
+    - 17080
+    ys:
+    - 0
+    - -4
+    - -6
+    - -7
+    - -7
+    - -9
+    - -9
+    - -10
+    - -10
+    - -12
+    - -13
+    - -13
+    - -12
+    - -11
+    - -10
+    - -10
+    - -9
+    - -8
+    - -8
+    - -7
+    - -7
+    - -6
+    - -6
+    - -4
+    - -4
+    - -3
+    - 0
+    abbr: genc
+  - xs:
+    - -4835
+    - -4830
+    - 7020
+    - 7025
+    - 7150
+    - 7185
+    - 7220
+    - 7240
+    - 7245
+    - 7265
+    - 7285
+    - 7315
+    - 7345
+    - 7400
+    - 7420
+    - 7445
+    - 7485
+    - 7555
+    - 7580
+    - 7620
+    - 7635
+    - 7725
+    - 7730
+    - 7775
+    - 7795
+    - 7870
+    - 7895
+    - 7955
+    - 8000
+    - 8080
+    - 8090
+    - 8135
+    - 8150
+    - 8255
+    - 8270
+    - 8325
+    - 8330
+    - 8440
+    - 8460
+    - 8525
+    - 8535
+    - 8650
+    - 8750
+    - 8765
+    - 8770
+    - 13685
+    - 13730
+    - 13765
+    - 13810
+    - 13850
+    - 13880
+    - 13905
+    - 13985
+    - 14060
+    - 14115
+    - 14140
+    - 14215
+    - 14240
+    - 14300
+    - 14340
+    - 14355
+    - 14425
+    - 14445
+    - 14515
+    - 14615
+    - 14715
+    - 14720
+    - 14740
+    - 14755
+    - 14835
+    - 14845
+    - 14860
+    - 14880
+    - 14970
+    - 14980
+    - 15015
+    - 15020
+    - 15115
+    - 15150
+    - 15180
+    - 15200
+    - 15275
+    - 15290
+    - 15315
+    - 15335
+    - 15435
+    - 15440
+    - 15575
+    - 15595
+    - 15670
+    - 15720
+    - 15865
+    - 15935
+    - 15975
+    - 16100
+    - 16215
+    - 16280
+    - 16345
+    - 16420
+    - 16475
+    - 16550
+    - 16575
+    - 16595
+    - 16675
+    - 16700
+    - 16735
+    - 16765
+    - 16795
+    - 16835
+    - 16845
+    - 16855
+    - 16860
+    - 18250
+    - 18270
+    - 18300
+    - 18415
+    - 18460
+    - 18475
+    - 18480
+    - 18515
+    - 18540
+    - 18595
+    - 18625
+    - 18720
+    - 18760
+    - 18795
+    - 18800
+    - 18835
+    - 18845
+    - 18940
+    - 18980
+    - 19000
+    - 19060
+    - 19065
+    - 19180
+    - 19190
+    - 19265
+    - 19270
+    - 19565
+    - 19625
+    - 19635
+    - 19730
+    - 19750
+    - 19815
+    - 19875
+    - 20105
+    - 20130
+    - 20180
+    - 20210
+    - 20355
+    - 20360
+    - 28285
+    - 28330
+    - 28335
+    - 28420
+    - 28440
+    - 28485
+    - 28490
+    - 28595
+    - 28600
+    - 28775
+    - 28795
+    - 28995
+    - 29015
+    - 29345
+    - 29590
+    - 29700
+    - 29785
+    - 29790
+    - 29965
+    - 29985
+    - 30225
+    - 30230
+    - 69140
+    - 69145
+    ys:
+    - 0
+    - -32
+    - -32
+    - -34
+    - -34
+    - -36
+    - -36
+    - -37
+    - -38
+    - -38
+    - -39
+    - -39
+    - -41
+    - -42
+    - -43
+    - -43
+    - -45
+    - -45
+    - -46
+    - -46
+    - -47
+    - -47
+    - -48
+    - -48
+    - -49
+    - -49
+    - -50
+    - -50
+    - -51
+    - -51
+    - -52
+    - -52
+    - -53
+    - -53
+    - -54
+    - -54
+    - -55
+    - -55
+    - -56
+    - -56
+    - -57
+    - -57
+    - -56
+    - -55
+    - -32
+    - -32
+    - -33
+    - -35
+    - -38
+    - -39
+    - -39
+    - -41
+    - -43
+    - -43
+    - -44
+    - -45
+    - -45
+    - -47
+    - -47
+    - -48
+    - -49
+    - -49
+    - -50
+    - -50
+    - -53
+    - -53
+    - -54
+    - -54
+    - -55
+    - -55
+    - -56
+    - -56
+    - -57
+    - -57
+    - -58
+    - -58
+    - -59
+    - -59
+    - -60
+    - -60
+    - -61
+    - -61
+    - -62
+    - -62
+    - -63
+    - -63
+    - -64
+    - -64
+    - -65
+    - -65
+    - -66
+    - -63
+    - -63
+    - -61
+    - -59
+    - -56
+    - -54
+    - -51
+    - -49
+    - -46
+    - -44
+    - -42
+    - -42
+    - -38
+    - -38
+    - -36
+    - -36
+    - -34
+    - -34
+    - -33
+    - -33
+    - -32
+    - -32
+    - -34
+    - -35
+    - -38
+    - -38
+    - -39
+    - -40
+    - -40
+    - -42
+    - -42
+    - -44
+    - -44
+    - -46
+    - -46
+    - -47
+    - -47
+    - -48
+    - -48
+    - -49
+    - -50
+    - -50
+    - -51
+    - -51
+    - -52
+    - -52
+    - -53
+    - -53
+    - -54
+    - -55
+    - -55
+    - -56
+    - -56
+    - -57
+    - -57
+    - -58
+    - -58
+    - -59
+    - -59
+    - -32
+    - -32
+    - -31
+    - -30
+    - -30
+    - -29
+    - -29
+    - -28
+    - -28
+    - -27
+    - -27
+    - -26
+    - -26
+    - -25
+    - -24
+    - -24
+    - -23
+    - -23
+    - -22
+    - -22
+    - -21
+    - -21
+    - -20
+    - -20
+    - 0
+    abbr: tenc
+  - xs:
+    - 2875
+    - 2880
+    - 2890
+    - 2895
+    - 2910
+    - 2930
+    - 2940
+    - 2945
+    - 2970
+    - 2980
+    - 3010
+    - 3030
+    - 3035
+    - 3040
+    - 3050
+    - 3070
+    - 3075
+    - 3080
+    - 3100
+    - 3110
+    - 3115
+    - 3130
+    - 3135
+    - 3140
+    - 3145
+    - 3150
+    - 3155
+    - 3170
+    - 3190
+    - 3195
+    - 3230
+    - 3255
+    - 3270
+    - 3300
+    - 3325
+    - 3385
+    - 3410
+    - 3430
+    - 3545
+    - 3575
+    - 3590
+    - 3705
+    - 3715
+    - 3845
+    - 3860
+    - 3905
+    - 3915
+    - 4065
+    - 4130
+    - 4250
+    - 4300
+    - 4305
+    - 4315
+    - 4355
+    - 4360
+    - 4385
+    - 4395
+    - 4435
+    - 4440
+    - 4455
+    - 4465
+    - 4490
+    - 4495
+    - 4520
+    - 4525
+    - 4545
+    - 4550
+    - 4570
+    - 4575
+    - 4590
+    - 4595
+    - 4635
+    - 4640
+    - 4650
+    - 4655
+    - 4705
+    - 4710
+    - 4760
+    - 4765
+    - 4815
+    - 4820
+    - 28530
+    - 28995
+    - 29015
+    - 29040
+    - 29230
+    - 29235
+    - 29385
+    - 29390
+    - 29525
+    - 29545
+    - 29635
+    - 29655
+    - 29895
+    - 29900
+    - 30025
+    - 30030
+    - 30200
+    - 30205
+    - 30355
+    - 30360
+    - 30465
+    - 30470
+    - 30575
+    - 30640
+    - 30685
+    - 30690
+    - 30795
+    - 30800
+    - 30905
+    - 30980
+    - 31040
+    - 31090
+    - 31095
+    - 31140
+    - 31180
+    - 31250
+    - 31315
+    - 31375
+    - 31380
+    - 31490
+    - 31515
+    - 31645
+    - 31665
+    - 31750
+    - 31755
+    - 32065
+    - 32085
+    - 32145
+    - 32150
+    - 32370
+    - 32395
+    - 32610
+    - 32615
+    - 32740
+    - 32745
+    - 32940
+    - 32945
+    - 33075
+    - 33115
+    - 33180
+    - 33185
+    - 33775
+    - 33780
+    - 67780
+    - 67785
+    ys:
+    - 0
+    - -5
+    - -6
+    - -10
+    - -16
+    - -20
+    - -25
+    - -26
+    - -30
+    - -31
+    - -38
+    - -41
+    - -41
+    - -43
+    - -44
+    - -48
+    - -48
+    - -50
+    - -53
+    - -54
+    - -56
+    - -57
+    - -58
+    - -58
+    - -59
+    - -59
+    - -60
+    - -60
+    - -62
+    - -63
+    - -63
+    - -64
+    - -65
+    - -65
+    - -67
+    - -67
+    - -68
+    - -69
+    - -70
+    - -71
+    - -72
+    - -73
+    - -74
+    - -75
+    - -76
+    - -76
+    - -77
+    - -77
+    - -78
+    - -80
+    - -81
+    - -81
+    - -82
+    - -82
+    - -83
+    - -83
+    - -84
+    - -84
+    - -85
+    - -85
+    - -86
+    - -86
+    - -87
+    - -87
+    - -88
+    - -88
+    - -89
+    - -89
+    - -90
+    - -90
+    - -91
+    - -91
+    - -92
+    - -92
+    - -93
+    - -93
+    - -94
+    - -94
+    - -95
+    - -95
+    - 0
+    - 0
+    - -3
+    - -3
+    - -4
+    - -4
+    - -5
+    - -5
+    - -6
+    - -6
+    - -7
+    - -7
+    - -8
+    - -8
+    - -9
+    - -9
+    - -10
+    - -10
+    - -11
+    - -11
+    - -12
+    - -12
+    - -13
+    - -13
+    - -14
+    - -15
+    - -16
+    - -16
+    - -17
+    - -17
+    - -19
+    - -19
+    - -20
+    - -21
+    - -21
+    - -22
+    - -22
+    - -23
+    - -24
+    - -25
+    - -25
+    - -26
+    - -26
+    - -27
+    - -27
+    - -28
+    - -28
+    - -29
+    - -29
+    - -30
+    - -30
+    - -31
+    - -31
+    - -32
+    - -32
+    - -33
+    - -33
+    - -34
+    - -34
+    - -35
+    - -35
+    - -36
+    - -36
+    - -37
+    - -37
+    - 0
+    abbr: brec
+  - xs: []
+    ys: []
+    abbr: shfc
+  - xs:
+    - 2785
+    - 2790
+    - 2815
+    - 2825
+    - 2840
+    - 2845
+    - 2855
+    - 2870
+    - 2875
+    - 2890
+    - 2895
+    - 2915
+    - 2920
+    - 2935
+    - 2960
+    - 2965
+    - 2980
+    - 2985
+    - 3000
+    - 3005
+    - 3030
+    - 3050
+    - 3070
+    - 3075
+    - 3105
+    - 3110
+    - 3130
+    - 3140
+    - 3160
+    - 3165
+    - 3195
+    - 3200
+    - 3215
+    - 3220
+    - 3245
+    - 3250
+    - 3285
+    - 3290
+    - 3305
+    - 3310
+    - 3340
+    - 3345
+    - 3360
+    - 3365
+    - 3375
+    - 3380
+    - 3405
+    - 3410
+    - 3440
+    - 3450
+    - 3470
+    - 3535
+    - 3555
+    - 3560
+    - 3590
+    - 3605
+    - 3625
+    - 3630
+    - 3645
+    - 3665
+    - 3670
+    - 3705
+    - 3715
+    - 3735
+    - 3740
+    - 3770
+    - 3775
+    - 3805
+    - 3810
+    - 3845
+    - 3850
+    - 3880
+    - 3885
+    - 3915
+    - 3930
+    - 3970
+    - 3975
+    - 4005
+    - 4010
+    - 4045
+    - 4050
+    - 4090
+    - 4095
+    - 4135
+    - 4150
+    - 4185
+    - 4190
+    - 4225
+    - 4235
+    - 4270
+    - 4275
+    - 4305
+    - 4375
+    - 4395
+    - 4400
+    - 4425
+    - 4435
+    - 4480
+    - 4485
+    - 4525
+    - 4530
+    - 4580
+    - 4585
+    - 4650
+    - 4655
+    - 4705
+    - 4710
+    - 4760
+    - 4765
+    - 4835
+    - 4850
+    - 4905
+    - 4910
+    - 4920
+    - 4925
+    ys:
+    - 100
+    - 99
+    - 97
+    - 97
+    - 96
+    - 96
+    - 95
+    - 95
+    - 94
+    - 94
+    - 93
+    - 93
+    - 92
+    - 91
+    - 91
+    - 90
+    - 90
+    - 89
+    - 89
+    - 88
+    - 88
+    - 87
+    - 87
+    - 86
+    - 86
+    - 85
+    - 85
+    - 84
+    - 84
+    - 83
+    - 83
+    - 82
+    - 82
+    - 81
+    - 81
+    - 80
+    - 80
+    - 79
+    - 79
+    - 78
+    - 78
+    - 77
+    - 77
+    - 76
+    - 76
+    - 75
+    - 75
+    - 74
+    - 74
+    - 72
+    - 72
+    - 70
+    - 69
+    - 68
+    - 68
+    - 67
+    - 67
+    - 66
+    - 65
+    - 65
+    - 64
+    - 64
+    - 63
+    - 63
+    - 62
+    - 62
+    - 61
+    - 61
+    - 60
+    - 60
+    - 59
+    - 59
+    - 58
+    - 58
+    - 57
+    - 57
+    - 56
+    - 56
+    - 55
+    - 55
+    - 54
+    - 54
+    - 53
+    - 53
+    - 52
+    - 52
+    - 51
+    - 51
+    - 50
+    - 50
+    - 49
+    - 49
+    - 47
+    - 47
+    - 46
+    - 46
+    - 45
+    - 45
+    - 44
+    - 44
+    - 43
+    - 43
+    - 42
+    - 42
+    - 41
+    - 41
+    - 40
+    - 40
+    - 39
+    - 39
+    - 38
+    - 38
+    - 37
+    - 37
+    - 100
+    abbr: voic
+  - xs:
+    - 1160
+    - 13725
+    - 13760
+    - 13775
+    - 13790
+    - 13820
+    - 13845
+    - 13865
+    - 13870
+    - 13890
+    - 13900
+    - 13925
+    - 13940
+    - 13945
+    - 13950
+    - 14020
+    - 14080
+    - 14135
+    - 14165
+    - 14195
+    - 14220
+    - 14305
+    - 14315
+    - 14345
+    - 14360
+    - 14445
+    - 14455
+    - 14475
+    - 14480
+    - 14535
+    - 14580
+    - 14615
+    - 14660
+    - 14685
+    - 14695
+    - 14705
+    - 14740
+    - 14745
+    - 14840
+    - 14845
+    - 14920
+    - 14930
+    - 15275
+    - 15340
+    - 15405
+    - 15435
+    - 15470
+    - 15490
+    - 15495
+    - 15525
+    - 15530
+    - 15540
+    - 15550
+    - 15570
+    - 15580
+    - 15625
+    - 15650
+    - 15660
+    - 15700
+    - 15710
+    - 15715
+    - 15745
+    - 15765
+    - 15790
+    - 15795
+    - 15810
+    - 15820
+    - 15835
+    - 15845
+    - 15860
+    - 15865
+    - 15885
+    - 15895
+    - 15905
+    - 15910
+    - 15935
+    - 15940
+    - 40515
+    - 40520
+    - 40550
+    - 40670
+    - 40695
+    - 40715
+    - 40745
+    - 40760
+    - 40780
+    - 40790
+    - 40805
+    - 40855
+    - 40875
+    - 40910
+    - 40930
+    - 40950
+    - 40955
+    - 40965
+    - 40995
+    - 41005
+    - 41010
+    - 41025
+    - 41040
+    - 41045
+    - 41065
+    - 41070
+    - 41075
+    - 41095
+    - 41100
+    - 41105
+    - 41110
+    - 41125
+    - 41130
+    - 41140
+    - 41150
+    - 41160
+    - 41195
+    - 41200
+    - 41215
+    - 41220
+    - 41235
+    - 41240
+    ys:
+    - 100
+    - 100
+    - 104
+    - 104
+    - 106
+    - 106
+    - 108
+    - 108
+    - 109
+    - 109
+    - 110
+    - 110
+    - 111
+    - 111
+    - 112
+    - 112
+    - 113
+    - 115
+    - 115
+    - 116
+    - 116
+    - 119
+    - 119
+    - 120
+    - 121
+    - 121
+    - 122
+    - 122
+    - 123
+    - 123
+    - 124
+    - 125
+    - 125
+    - 126
+    - 126
+    - 127
+    - 127
+    - 128
+    - 128
+    - 129
+    - 129
+    - 130
+    - 130
+    - 127
+    - 126
+    - 125
+    - 123
+    - 123
+    - 121
+    - 121
+    - 120
+    - 120
+    - 119
+    - 119
+    - 117
+    - 115
+    - 115
+    - 113
+    - 112
+    - 112
+    - 111
+    - 111
+    - 109
+    - 109
+    - 108
+    - 108
+    - 107
+    - 107
+    - 106
+    - 106
+    - 105
+    - 105
+    - 104
+    - 104
+    - 103
+    - 103
+    - 100
+    - 100
+    - 183
+    - 181
+    - 168
+    - 165
+    - 163
+    - 161
+    - 159
+    - 158
+    - 156
+    - 156
+    - 150
+    - 149
+    - 144
+    - 143
+    - 140
+    - 140
+    - 137
+    - 134
+    - 132
+    - 130
+    - 128
+    - 127
+    - 122
+    - 119
+    - 119
+    - 117
+    - 115
+    - 115
+    - 114
+    - 114
+    - 112
+    - 111
+    - 109
+    - 109
+    - 107
+    - 105
+    - 103
+    - 103
+    - 102
+    - 102
+    - 100
+    abbr: velc
+  - xs: []
+    ys: []
+    abbr: pexp
+wave_parts:
+- name: bgm.wav
+  comment: ""
+  track_no: 1
+  position: 2580
+  relative_path: bgm.wav
+  file_duration_ms: 253120.7256
+  skip_ms: 0
+  trim_ms: 0
