@@ -292,10 +292,10 @@ exp_selectors:
 - shfc
 - tenc
 - voic
-- pitd
 - pexp
+- cl04
 exp_primary: 9
-exp_secondary: 9
+exp_secondary: 0
 key: 11
 time_signatures:
 - bar_position: 0
@@ -1876,19 +1876,19 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 71040
+  - position: 71520
     duration: 240
     tone: 63
     lyric: ye
     pitch:
       data:
-      - {x: -40, y: 0, shape: io}
-      - {x: 81.818184, y: 0, shape: io}
+      - {x: -40.000004, y: 0, shape: io}
+      - {x: -40.000004, y: 0, shape: io}
       snap_first: true
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 71280
+  - position: 71760
     duration: 240
     tone: 61
     lyric: kong
@@ -1900,7 +1900,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 71520
+  - position: 72000
     duration: 240
     tone: 63
     lyric: zhong
@@ -1912,7 +1912,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 71760
+  - position: 72240
     duration: 240
     tone: 61
     lyric: zui
@@ -1924,7 +1924,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 72000
+  - position: 72480
     duration: 240
     tone: 63
     lyric: liang
@@ -1936,7 +1936,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 72240
+  - position: 72720
     duration: 240
     tone: 66
     lyric: de
@@ -1948,8 +1948,8 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 72480
-    duration: 1920
+  - position: 72960
+    duration: 1680
     tone: 66
     lyric: xing
     pitch:
@@ -1960,7 +1960,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 74640
+  - position: 75120
     duration: 240
     tone: 54
     lyric: shi
@@ -1972,7 +1972,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 74880
+  - position: 75360
     duration: 720
     tone: 59
     lyric: fou
@@ -1984,8 +1984,8 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 75600
-    duration: 720
+  - position: 76080
+    duration: 480
     tone: 61
     lyric: zhi
     pitch:
@@ -1996,8 +1996,8 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 76320
-    duration: 2190
+  - position: 76560
+    duration: 1440
     tone: 59
     lyric: dao
     pitch:
@@ -2182,7 +2182,7 @@ voice_parts:
     lyric: ye
     pitch:
       data:
-      - {x: -107.954544, y: -90, shape: io}
+      - {x: -160.22728, y: -90, shape: io}
       - {x: 40, y: 0, shape: io}
       snap_first: true
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
@@ -2285,7 +2285,7 @@ voice_parts:
     phoneme_expressions: []
     phoneme_overrides: []
   - position: 92160
-    duration: 720
+    duration: 480
     tone: 61
     lyric: zai
     pitch:
@@ -2296,7 +2296,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 92880
+  - position: 92640
     duration: 1680
     tone: 59
     lyric: yi
@@ -2308,7 +2308,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 95040
+  - position: 94800
     duration: 240
     tone: 59
     lyric: shi
@@ -2320,7 +2320,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 95280
+  - position: 95040
     duration: 240
     tone: 59
     lyric: deng
@@ -2332,7 +2332,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 95520
+  - position: 95280
     duration: 240
     tone: 59
     lyric: tai
@@ -2344,7 +2344,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 95760
+  - position: 95520
     duration: 240
     tone: 61
     lyric: yang
@@ -2356,7 +2356,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 96000
+  - position: 95760
     duration: 240
     tone: 63
     lyric: sheng
@@ -2368,7 +2368,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 96240
+  - position: 96000
     duration: 720
     tone: 59
     lyric: qi
@@ -2380,7 +2380,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 97200
+  - position: 96960
     duration: 240
     tone: 56
     lyric: hai
@@ -2392,7 +2392,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 97440
+  - position: 97200
     duration: 240
     tone: 61
     lyric: shi
@@ -2404,7 +2404,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 97680
+  - position: 97440
     duration: 240
     tone: 61
     lyric: yi
@@ -2416,7 +2416,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 97920
+  - position: 97680
     duration: 240
     tone: 63
     lyric: wai
@@ -2428,7 +2428,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 98160
+  - position: 97920
     duration: 480
     tone: 59
     lyric: xian
@@ -2440,8 +2440,8 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 98640
-    duration: 720
+  - position: 98400
+    duration: 480
     tone: 66
     lyric: lai
     pitch:
@@ -2452,8 +2452,8 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 99360
-    duration: 1680
+  - position: 98880
+    duration: 1440
     tone: 63
     lyric: lin
     pitch:
@@ -2464,31 +2464,31 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 101040
+  - position: 100320
     duration: 240
     tone: 64
     lyric: +
     pitch:
       data:
       - {x: -40, y: -10, shape: io}
-      - {x: 40, y: 0, shape: io}
+      - {x: 56.81818, y: 0, shape: io}
       snap_first: true
-    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    vibrato: {length: 0, period: 175, depth: 31.4394, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 101280
+  - position: 100560
     duration: 960
     tone: 66
     lyric: +
     pitch:
       data:
-      - {x: -40, y: -20, shape: io}
-      - {x: 40, y: 0, shape: io}
-      snap_first: true
+      - {x: -77.27273, y: -20.227272, shape: io}
+      - {x: 81.818184, y: 0, shape: io}
+      snap_first: false
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 102240
+  - position: 101520
     duration: 240
     tone: 66
     lyric: wo
@@ -2500,7 +2500,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 102480
+  - position: 101760
     duration: 240
     tone: 75
     lyric: ning
@@ -2512,7 +2512,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 102720
+  - position: 102000
     duration: 480
     tone: 73
     lyric: yuan
@@ -2524,7 +2524,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 103200
+  - position: 102480
     duration: 480
     tone: 71
     lyric: suo
@@ -2536,7 +2536,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 103680
+  - position: 102960
     duration: 480
     tone: 71
     lyric: you
@@ -2548,7 +2548,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 104160
+  - position: 103440
     duration: 480
     tone: 71
     lyric: tong
@@ -2560,7 +2560,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 104640
+  - position: 103920
     duration: 240
     tone: 71
     lyric: ku
@@ -2572,7 +2572,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 104880
+  - position: 104160
     duration: 240
     tone: 68
     lyric: dou
@@ -2584,7 +2584,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 105120
+  - position: 104400
     duration: 240
     tone: 66
     lyric: liu
@@ -2596,7 +2596,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 105360
+  - position: 104640
     duration: 240
     tone: 78
     lyric: zai
@@ -2608,7 +2608,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 105600
+  - position: 104880
     duration: 480
     tone: 80
     lyric: xin
@@ -2620,7 +2620,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 106080
+  - position: 105360
     duration: 480
     tone: 80
     lyric: li
@@ -2632,7 +2632,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 106560
+  - position: 105840
     duration: 240
     tone: 71
     lyric: ye
@@ -2644,7 +2644,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 106800
+  - position: 106080
     duration: 240
     tone: 71
     lyric: bu
@@ -2656,7 +2656,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 107040
+  - position: 106320
     duration: 240
     tone: 73
     lyric: yuan
@@ -2668,7 +2668,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 107280
+  - position: 106560
     duration: 240
     tone: 75
     lyric: wang
@@ -2680,7 +2680,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 107520
+  - position: 106800
     duration: 480
     tone: 78
     lyric: ji
@@ -2692,7 +2692,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 108000
+  - position: 107280
     duration: 240
     tone: 78
     lyric: ni
@@ -2704,7 +2704,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 108240
+  - position: 107520
     duration: 240
     tone: 78
     lyric: de
@@ -2716,7 +2716,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 108480
+  - position: 107760
     duration: 480
     tone: 71
     lyric: yan
@@ -2728,7 +2728,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 108960
+  - position: 108240
     duration: 1200
     tone: 73
     lyric: jing
@@ -2740,19 +2740,19 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 110160
+  - position: 109440
     duration: 720
     tone: 71
     lyric: +
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
-      - {x: 40, y: 0, shape: io}
+      - {x: 164.77272, y: 0, shape: io}
       snap_first: true
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 111360
+  - position: 110640
     duration: 240
     tone: 71
     lyric: gei
@@ -2764,7 +2764,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 111600
+  - position: 110880
     duration: 240
     tone: 71
     lyric: wo
@@ -2776,7 +2776,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 111840
+  - position: 111120
     duration: 240
     tone: 71
     lyric: zai
@@ -2788,7 +2788,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 112080
+  - position: 111360
     duration: 240
     tone: 71
     lyric: qu
@@ -2800,7 +2800,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 112320
+  - position: 111600
     duration: 240
     tone: 68
     lyric: xiang
@@ -2812,7 +2812,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 112560
+  - position: 111840
     duration: 240
     tone: 66
     lyric: xin
@@ -2824,7 +2824,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 112800
+  - position: 112080
     duration: 240
     tone: 78
     lyric: de
@@ -2836,7 +2836,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 113040
+  - position: 112320
     duration: 480
     tone: 80
     lyric: yong
@@ -2848,7 +2848,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 113520
+  - position: 112800
     duration: 480
     tone: 80
     lyric: qi
@@ -2860,7 +2860,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 114000
+  - position: 113280
     duration: 240
     tone: 71
     lyric: o
@@ -2872,7 +2872,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 114240
+  - position: 113520
     duration: 240
     tone: 71
     lyric: yue
@@ -2884,7 +2884,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 114480
+  - position: 113760
     duration: 240
     tone: 73
     lyric: guo
@@ -2896,7 +2896,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 114720
+  - position: 114000
     duration: 240
     tone: 75
     lyric: huang
@@ -2908,7 +2908,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 114960
+  - position: 114240
     duration: 480
     tone: 78
     lyric: yan
@@ -2920,7 +2920,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 115440
+  - position: 114720
     duration: 240
     tone: 78
     lyric: qu
@@ -2932,7 +2932,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 115680
+  - position: 114960
     duration: 240
     tone: 78
     lyric: yong
@@ -2944,7 +2944,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 115920
+  - position: 115200
     duration: 480
     tone: 75
     lyric: bao
@@ -2956,7 +2956,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 116400
+  - position: 115680
     duration: 240
     tone: 73
     lyric: +
@@ -2968,7 +2968,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 116640
+  - position: 115920
     duration: 960
     tone: 73
     lyric: ni
@@ -2980,7 +2980,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 117600
+  - position: 116880
     duration: 240
     tone: 75
     lyric: mei
@@ -2992,7 +2992,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 117840
+  - position: 117120
     duration: 480
     tone: 73
     lyric: dang
@@ -3004,7 +3004,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 118320
+  - position: 117600
     duration: 720
     tone: 71
     lyric: wo
@@ -3016,7 +3016,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 119040
+  - position: 118320
     duration: 480
     tone: 71
     lyric: zhao
@@ -3028,7 +3028,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 119520
+  - position: 118800
     duration: 240
     tone: 71
     lyric: bu
@@ -3040,7 +3040,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 119760
+  - position: 119040
     duration: 240
     tone: 71
     lyric: dao
@@ -3052,7 +3052,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 120000
+  - position: 119280
     duration: 240
     tone: 68
     lyric: cun
@@ -3064,7 +3064,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 120240
+  - position: 119520
     duration: 240
     tone: 66
     lyric: zai
@@ -3076,7 +3076,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 120480
+  - position: 119760
     duration: 240
     tone: 78
     lyric: de
@@ -3088,7 +3088,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 120720
+  - position: 120000
     duration: 480
     tone: 80
     lyric: yi
@@ -3100,7 +3100,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 121200
+  - position: 120480
     duration: 480
     tone: 80
     lyric: yi
@@ -3112,7 +3112,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 121680
+  - position: 120960
     duration: 240
     tone: 71
     lyric: mei
@@ -3124,7 +3124,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 121920
+  - position: 121200
     duration: 240
     tone: 71
     lyric: dang
@@ -3136,7 +3136,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 122160
+  - position: 121440
     duration: 240
     tone: 73
     lyric: wo
@@ -3148,7 +3148,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 122400
+  - position: 121680
     duration: 240
     tone: 75
     lyric: mi
@@ -3160,7 +3160,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 122640
+  - position: 121920
     duration: 480
     tone: 78
     lyric: shi
@@ -3172,7 +3172,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 123120
+  - position: 122400
     duration: 240
     tone: 78
     lyric: zai
@@ -3184,7 +3184,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 123360
+  - position: 122640
     duration: 240
     tone: 78
     lyric: hei
@@ -3196,7 +3196,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 123600
+  - position: 122880
     duration: 480
     tone: 71
     lyric: ye
@@ -3208,8 +3208,8 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 124080
-    duration: 1200
+  - position: 123360
+    duration: 1440
     tone: 73
     lyric: li
     pitch:
@@ -3220,7 +3220,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 125520
+  - position: 124800
     duration: 240
     tone: 73
     lyric: o
@@ -3232,7 +3232,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 125760
+  - position: 125040
     duration: 240
     tone: 75
     lyric: o
@@ -3244,7 +3244,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 126000
+  - position: 125280
     duration: 720
     tone: 71
     lyric: o
@@ -3256,7 +3256,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 126720
+  - position: 126000
     duration: 240
     tone: 71
     lyric: ye
@@ -3268,7 +3268,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 126960
+  - position: 126240
     duration: 240
     tone: 71
     lyric: kong
@@ -3280,7 +3280,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 127200
+  - position: 126480
     duration: 720
     tone: 71
     lyric: zhong
@@ -3292,7 +3292,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 127920
+  - position: 127200
     duration: 240
     tone: 68
     lyric: zui
@@ -3304,7 +3304,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 128160
+  - position: 127440
     duration: 240
     tone: 78
     lyric: liang
@@ -3316,7 +3316,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 128400
+  - position: 127680
     duration: 480
     tone: 80
     lyric: de
@@ -3328,7 +3328,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 128880
+  - position: 128160
     duration: 720
     tone: 80
     lyric: xing
@@ -3340,7 +3340,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 129600
+  - position: 128880
     duration: 240
     tone: 71
     lyric: o
@@ -3352,7 +3352,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 129840
+  - position: 129120
     duration: 240
     tone: 73
     lyric: qing
@@ -3364,7 +3364,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 130080
+  - position: 129360
     duration: 240
     tone: 75
     lyric: zhao
@@ -3376,7 +3376,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 130320
+  - position: 129600
     duration: 480
     tone: 78
     lyric: liang
@@ -3388,7 +3388,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 130800
+  - position: 130080
     duration: 480
     tone: 78
     lyric: wo
@@ -3400,7 +3400,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 131280
+  - position: 130560
     duration: 240
     tone: 75
     lyric: qian
@@ -3412,7 +3412,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 131520
+  - position: 130800
     duration: 240
     tone: 73
     lyric: +
@@ -3424,7 +3424,7 @@ voice_parts:
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
     phoneme_expressions: []
     phoneme_overrides: []
-  - position: 131760
+  - position: 131040
     duration: 1920
     tone: 73
     lyric: xing
@@ -4965,117 +4965,145 @@ voice_parts:
     - 62980
     - 62990
     - 62995
-    - 187605
-    - 187610
-    - 200880
-    - 200920
-    - 200935
-    - 200975
-    - 200985
-    - 200995
-    - 201015
-    - 201020
-    - 201050
-    - 201065
-    - 201150
-    - 201170
-    - 201200
-    - 201210
-    - 201230
-    - 201375
-    - 201420
-    - 201580
-    - 201605
-    - 201615
-    - 201625
-    - 201640
-    - 201650
-    - 201665
-    - 201720
-    - 201730
-    - 201740
-    - 201750
-    - 201770
-    - 201785
-    - 201795
-    - 201805
-    - 201825
-    - 201880
-    - 201925
-    - 201935
-    - 202010
-    - 202020
-    - 202055
-    - 202075
-    - 202085
-    - 202095
-    - 202100
-    - 202110
-    - 202125
-    - 202165
-    - 202180
-    - 202190
-    - 202195
-    - 202200
-    - 202210
-    - 202220
-    - 202250
-    - 202275
-    - 202320
-    - 202330
-    - 202350
-    - 202405
-    - 202450
-    - 202465
-    - 202495
-    - 202505
-    - 202515
-    - 202550
-    - 202560
-    - 202575
-    - 202600
-    - 202745
-    - 202760
-    - 202775
-    - 202795
-    - 202810
-    - 202820
-    - 202835
-    - 202855
-    - 202905
-    - 202920
-    - 202930
-    - 202935
-    - 202950
-    - 202990
-    - 203005
-    - 203035
-    - 203060
-    - 203090
-    - 203100
-    - 203200
-    - 203300
-    - 203310
-    - 203330
-    - 203410
-    - 203420
-    - 203435
-    - 203490
-    - 203510
-    - 203520
-    - 203530
-    - 203555
-    - 203585
-    - 203605
-    - 203610
-    - 203620
-    - 203645
-    - 203670
-    - 203675
-    - 203690
-    - 203695
-    - 203740
-    - 203745
+    - 71475
+    - 71480
+    - 71500
+    - 71515
+    - 71525
+    - 71530
+    - 71675
+    - 71740
+    - 71795
+    - 71820
+    - 71855
+    - 71875
+    - 71890
+    - 72035
+    - 72225
+    - 72400
+    - 72425
+    - 72455
+    - 72515
+    - 72610
+    - 72625
+    - 72660
+    - 72720
+    - 72750
+    - 72765
+    - 72795
+    - 72810
+    - 72940
+    - 72975
+    - 73060
+    - 73200
+    - 73210
+    - 73275
+    - 73330
+    - 73380
+    - 73400
+    - 73420
+    - 73425
+    - 73475
+    - 73495
+    - 73560
+    - 73635
+    - 73655
+    - 73690
+    - 73785
+    - 73815
+    - 73820
+    - 73840
+    - 73855
+    - 73895
+    - 73910
+    - 73930
+    - 73950
+    - 74020
+    - 74065
+    - 74090
+    - 74110
+    - 74130
+    - 74155
+    - 74195
+    - 74250
+    - 74300
+    - 74305
+    - 74345
+    - 74365
+    - 74375
+    - 74430
+    - 74445
+    - 74460
+    - 74470
+    - 75335
+    - 75340
+    - 76085
+    - 76090
+    - 84445
+    - 84485
+    - 84685
+    - 84890
+    - 85015
+    - 85050
+    - 85145
+    - 85195
+    - 85225
+    - 85325
+    - 85365
+    - 85445
+    - 85515
+    - 85530
+    - 85580
+    - 85600
+    - 85615
+    - 85635
+    - 85710
+    - 85725
+    - 85730
+    - 85740
+    - 85745
+    - 85750
+    - 85755
+    - 85760
+    - 101445
+    - 101455
+    - 101490
+    - 101495
+    - 101505
+    - 101520
+    - 101530
+    - 101535
+    - 101540
+    - 101550
+    - 101555
+    - 101565
+    - 101570
+    - 101575
+    - 101590
+    - 101595
+    - 101635
+    - 101645
+    - 101650
+    - 101665
+    - 101670
+    - 101680
+    - 101685
+    - 101695
+    - 101700
+    - 101720
+    - 101725
+    - 101730
+    - 101740
+    - 101745
+    - 101775
+    - 101780
+    - 101785
+    - 101790
+    - 101795
+    - 101805
+    - 101810
+    - 101815
+    - 208085
     ys:
     - 0
     - 0
@@ -5377,115 +5405,143 @@ voice_parts:
     - -163
     - 0
     - 0
-    - -32
-    - -32
-    - -34
-    - -34
-    - -37
-    - -37
-    - -39
-    - -39
-    - -40
-    - -40
-    - -42
-    - -43
-    - -44
-    - -44
-    - -45
-    - -45
-    - -51
-    - -55
-    - -62
-    - -63
-    - -63
-    - -64
-    - -64
-    - -65
-    - -65
-    - -69
-    - -69
-    - -70
-    - -70
-    - -72
-    - -72
-    - -73
-    - -73
-    - -75
-    - -77
-    - -80
-    - -80
-    - -85
-    - -86
-    - -87
-    - -89
-    - -89
-    - -90
-    - -90
-    - -91
-    - -91
-    - -94
-    - -94
-    - -95
-    - -95
-    - -96
-    - -96
-    - -97
-    - -98
-    - -100
-    - -102
-    - -103
-    - -103
-    - -107
-    - -109
-    - -111
-    - -112
-    - -112
-    - -114
-    - -115
-    - -116
-    - -116
+    - -121
+    - -121
+    - -119
+    - -119
     - -118
+    - -115
+    - -115
+    - -113
+    - -112
+    - -112
+    - -111
+    - -110
+    - -109
+    - -104
+    - -101
+    - -101
+    - -99
+    - -99
+    - -95
+    - -95
+    - -93
+    - -92
+    - -92
+    - -91
+    - -91
+    - -90
+    - -89
+    - -88
+    - -88
+    - -84
+    - -84
+    - -82
+    - -82
+    - -80
+    - -79
+    - -79
+    - -78
+    - -78
+    - -77
+    - -77
+    - -74
+    - -73
+    - -73
+    - -70
+    - -70
+    - -69
+    - -69
+    - -68
+    - -68
+    - -67
+    - -67
+    - -66
+    - -66
+    - -64
+    - -64
+    - -63
+    - -63
+    - -62
+    - -62
+    - -60
+    - -60
+    - -59
+    - -59
+    - -58
+    - -57
+    - -57
+    - -56
+    - -56
+    - -54
+    - -54
+    - -83
+    - -83
+    - -54
+    - -54
+    - -60
+    - -80
+    - -99
+    - -108
+    - -110
+    - -119
     - -124
-    - -125
-    - -125
-    - -127
-    - -127
-    - -128
-    - -128
-    - -130
-    - -132
-    - -133
-    - -133
-    - -134
-    - -134
-    - -137
-    - -137
+    - -129
     - -139
-    - -141
-    - -142
-    - -142
-    - -148
-    - -152
-    - -153
-    - -153
-    - -158
-    - -159
-    - -159
-    - -163
-    - -163
-    - -164
-    - -164
-    - -166
-    - -167
-    - -167
+    - -144
+    - -154
+    - -165
     - -168
-    - -168
-    - -170
-    - -170
-    - -171
-    - -171
-    - -172
-    - -172
+    - -175
+    - -179
+    - -181
+    - -183
+    - -198
+    - -199
+    - -202
+    - -204
+    - -204
+    - -206
+    - -206
+    - -54
+    - -54
+    - -53
+    - -46
+    - -44
+    - -43
+    - -43
+    - -40
+    - -40
+    - -38
+    - -38
+    - -36
+    - -36
+    - -35
+    - -33
+    - -32
+    - -30
+    - -25
+    - -24
+    - -22
+    - -21
+    - -19
+    - -19
+    - -17
+    - -16
+    - -16
+    - -12
+    - -12
+    - -10
+    - -10
+    - -8
+    - -5
+    - -4
+    - -4
+    - -3
+    - -3
+    - -1
+    - -1
+    - 0
     - 0
     abbr: dyn
   - xs:
@@ -5564,40 +5620,212 @@ voice_parts:
     - 57375
     - 58810
     - 58815
-    - 151915
-    - 151920
-    - 152400
-    - 152405
-    - 153120
-    - 153125
-    - 153840
-    - 153845
-    - 154795
-    - 154800
-    - 159110
-    - 159115
-    - 160560
-    - 160565
-    - 167275
-    - 167280
-    - 168480
-    - 168485
-    - 174950
-    - 174955
-    - 176400
-    - 176405
-    - 190080
-    - 190085
-    - 192000
-    - 192005
-    - 198715
-    - 198720
-    - 199675
-    - 199680
-    - 200875
-    - 200880
-    - 202800
-    - 202805
+    - 72990
+    - 73075
+    - 73090
+    - 73105
+    - 73115
+    - 73130
+    - 73135
+    - 73140
+    - 73160
+    - 73195
+    - 73225
+    - 73265
+    - 73315
+    - 73460
+    - 73490
+    - 73645
+    - 73670
+    - 73675
+    - 73705
+    - 73715
+    - 73845
+    - 73880
+    - 73900
+    - 73945
+    - 73970
+    - 74125
+    - 74150
+    - 74225
+    - 74340
+    - 74425
+    - 74470
+    - 74505
+    - 74650
+    - 74675
+    - 74680
+    - 75080
+    - 75085
+    - 76060
+    - 76065
+    - 77560
+    - 77575
+    - 77590
+    - 77600
+    - 77605
+    - 77610
+    - 77625
+    - 77635
+    - 77640
+    - 77670
+    - 77675
+    - 77685
+    - 77690
+    - 77700
+    - 77710
+    - 77725
+    - 77790
+    - 77800
+    - 77870
+    - 77895
+    - 77915
+    - 77940
+    - 77950
+    - 78055
+    - 78065
+    - 78075
+    - 78080
+    - 78115
+    - 78125
+    - 78140
+    - 78195
+    - 78200
+    - 78210
+    - 78230
+    - 78235
+    - 78705
+    - 78710
+    - 80405
+    - 80410
+    - 80630
+    - 80635
+    - 82355
+    - 82360
+    - 82530
+    - 82535
+    - 85445
+    - 85450
+    - 86860
+    - 86865
+    - 88765
+    - 88885
+    - 88925
+    - 89050
+    - 89060
+    - 89130
+    - 89225
+    - 89255
+    - 89280
+    - 89310
+    - 89315
+    - 89320
+    - 89375
+    - 89420
+    - 89455
+    - 89600
+    - 89630
+    - 89670
+    - 89705
+    - 89725
+    - 89755
+    - 89815
+    - 89855
+    - 89920
+    - 89935
+    - 90005
+    - 90085
+    - 90135
+    - 90170
+    - 90215
+    - 90250
+    - 90270
+    - 90300
+    - 90410
+    - 90455
+    - 90505
+    - 90575
+    - 90605
+    - 90635
+    - 90670
+    - 90680
+    - 90695
+    - 90745
+    - 90765
+    - 90775
+    - 90800
+    - 90805
+    - 90810
+    - 91180
+    - 91185
+    - 94335
+    - 94340
+    - 94790
+    - 94795
+    - 97700
+    - 97705
+    - 102470
+    - 102475
+    - 104600
+    - 104605
+    - 105875
+    - 105880
+    - 106785
+    - 106790
+    - 107760
+    - 107765
+    - 110620
+    - 110625
+    - 112085
+    - 112090
+    - 113300
+    - 113305
+    - 114225
+    - 114230
+    - 115230
+    - 115235
+    - 118785
+    - 118790
+    - 119755
+    - 119760
+    - 120960
+    - 120965
+    - 121915
+    - 121920
+    - 122880
+    - 122885
+    - 127425
+    - 127430
+    - 128890
+    - 128895
+    - 129565
+    - 129570
+    - 130575
+    - 130580
+    - 132480
+    - 132495
+    - 132515
+    - 132535
+    - 132560
+    - 132635
+    - 132645
+    - 132655
+    - 132715
+    - 132765
+    - 132770
+    - 132805
+    - 132820
+    - 132845
+    - 132855
+    - 132870
+    - 132890
+    - 132975
+    - 132990
+    - 133010
+    - 133030
+    - 133035
+    - 133040
+    - 207160
     ys:
     - 0
     - 0
@@ -5661,38 +5889,210 @@ voice_parts:
     - -21
     - 0
     - 0
-    - -61
-    - -61
+    - -4
+    - -4
+    - -5
+    - -5
+    - -6
+    - -6
+    - -7
+    - -7
+    - -9
+    - -10
+    - -12
+    - -13
+    - -20
+    - -21
+    - -31
+    - -31
+    - -32
+    - -32
+    - -33
+    - -34
+    - -35
+    - -36
+    - -36
+    - -37
+    - -38
     - -39
     - -39
+    - -41
+    - -41
+    - -42
+    - -42
+    - -45
+    - -45
+    - -27
+    - -27
+    - -21
+    - -21
+    - 22
+    - 22
+    - 24
+    - 24
+    - 25
+    - 25
+    - 26
+    - 26
+    - 27
+    - 28
+    - 28
+    - 29
+    - 29
+    - 30
+    - 30
+    - 31
+    - 31
+    - 35
+    - 36
+    - 39
+    - 42
+    - 43
+    - 44
+    - 44
+    - 52
+    - 52
+    - 53
+    - 53
+    - 56
+    - 56
+    - 58
+    - 61
+    - 61
+    - 62
+    - 62
     - 0
     - 0
-    - -26
-    - -26
+    - 11
+    - 11
     - 0
     - 0
+    - 12
+    - 12
+    - 0
+    - 0
+    - 19
+    - 19
+    - 0
+    - 0
+    - 13
+    - 13
+    - 7
+    - 7
+    - 1
+    - 1
+    - -4
+    - -9
+    - -11
+    - -12
+    - -13
+    - -13
+    - -14
+    - -16
+    - -17
+    - -19
+    - -22
+    - -22
+    - -23
+    - -24
+    - -25
+    - -25
+    - -28
+    - -28
+    - -30
+    - -30
+    - -33
+    - -35
+    - -36
+    - -36
+    - -38
+    - -38
+    - -40
+    - -40
+    - -44
+    - -44
+    - -47
+    - -49
+    - -51
+    - -52
+    - -53
+    - -53
+    - -54
+    - -55
+    - -56
+    - -56
+    - -57
+    - -58
+    - 0
+    - 0
+    - 20
+    - 20
+    - 0
+    - 0
+    - 36
+    - 36
+    - 0
+    - 0
+    - 38
+    - 38
     - -20
     - -20
     - 0
     - 0
-    - -18
-    - -18
+    - -13
+    - -13
     - 0
     - 0
-    - -41
-    - -41
+    - 32
+    - 32
+    - -14
+    - -14
     - 0
     - 0
-    - -42
-    - -42
+    - -8
+    - -8
     - 0
     - 0
-    - -27
-    - -27
+    - 16
+    - 16
+    - -15
+    - -15
     - 0
     - 0
+    - -13
+    - -13
+    - 0
+    - 0
+    - -17
+    - -17
+    - 0
+    - 0
+    - -10
+    - -10
+    - 16
+    - 16
+    - 15
+    - 12
+    - 11
+    - 8
+    - 2
+    - 2
+    - 0
+    - -5
+    - -9
+    - -9
+    - -13
+    - -14
+    - -17
+    - -19
+    - -20
+    - -23
+    - -39
     - -44
-    - -44
+    - -47
+    - -52
+    - -52
+    - 0
     - 0
     abbr: tenc
   - xs:
@@ -5775,10 +6175,41 @@ voice_parts:
     - 57340
     - 58840
     - 58845
-    - 147085
-    - 147090
-    - 186490
-    - 186495
+    - 104600
+    - 104605
+    - 105860
+    - 105865
+    - 106765
+    - 106770
+    - 107790
+    - 107795
+    - 112040
+    - 112045
+    - 113300
+    - 113305
+    - 113310
+    - 114190
+    - 114195
+    - 115245
+    - 115250
+    - 119725
+    - 119730
+    - 120970
+    - 120975
+    - 121885
+    - 121890
+    - 122920
+    - 122925
+    - 127415
+    - 127420
+    - 127425
+    - 128925
+    - 128930
+    - 129590
+    - 129595
+    - 130580
+    - 130585
+    - 203760
     ys:
     - 0
     - 0
@@ -5860,8 +6291,39 @@ voice_parts:
     - -10
     - 0
     - 0
-    - -33
-    - -33
+    - 46
+    - 46
+    - 0
+    - 0
+    - 21
+    - 21
+    - 0
+    - 0
+    - 30
+    - 30
+    - 17
+    - 0
+    - 0
+    - 28
+    - 28
+    - 0
+    - 0
+    - 33
+    - 33
+    - 0
+    - 0
+    - 15
+    - 15
+    - 0
+    - 0
+    - 20
+    - 32
+    - 32
+    - 0
+    - 0
+    - 14
+    - 14
+    - 0
     - 0
     abbr: brec
   - xs: []
@@ -5873,12 +6335,20 @@ voice_parts:
     - 37925
     - 39105
     - 39110
+    - 104605
+    - 104610
+    - 105865
+    - 105870
     - 118025
     ys:
     - 100
     - 100
     - 83
     - 83
+    - 100
+    - 100
+    - 80
+    - 80
     - 100
     - 100
     abbr: voic
@@ -5891,8 +6361,72 @@ voice_parts:
     abbr: velc
   - xs:
     - 65840
-    - 68505
+    - 104620
+    - 104625
+    - 105920
+    - 105925
+    - 106780
+    - 106785
+    - 107790
+    - 107795
+    - 112055
+    - 112060
+    - 113305
+    - 113310
+    - 114210
+    - 114215
+    - 115240
+    - 115245
+    - 119755
+    - 119760
+    - 120985
+    - 120990
+    - 121895
+    - 121900
+    - 122920
+    - 122925
+    - 127425
+    - 127430
+    - 128910
+    - 128915
+    - 129575
+    - 129580
+    - 130590
+    - 130595
+    - 144800
     ys:
+    - 100
+    - 100
+    - 12
+    - 12
+    - 100
+    - 100
+    - 17
+    - 17
+    - 100
+    - 100
+    - 14
+    - 14
+    - 100
+    - 100
+    - 15
+    - 15
+    - 100
+    - 100
+    - 11
+    - 11
+    - 100
+    - 100
+    - 15
+    - 15
+    - 100
+    - 100
+    - 13
+    - 13
+    - 100
+    - 100
+    - 20
+    - 20
     - 100
     - 100
     abbr: pexp
@@ -5963,59 +6497,7 @@ voice_parts:
     - 31785
     - 31860
     - 31865
-    - 70130
-    - 70135
-    - 76315
-    - 76320
-    - 78465
-    - 78470
-    - 81600
-    - 81605
-    - 82320
-    - 82325
-    - 100410
-    - 100435
-    - 100735
-    - 100750
-    - 101100
-    - 101115
-    - 101270
-    - 101275
-    - 101405
-    - 101410
-    - 101535
-    - 101540
-    - 101655
-    - 101660
-    - 101765
-    - 101770
-    - 101890
-    - 101905
-    - 102025
-    - 102030
-    - 102100
-    - 102105
-    - 102230
-    - 102290
-    - 102295
-    - 102365
-    - 102375
-    - 102415
-    - 102420
-    - 102465
-    - 102475
-    - 102520
-    - 102525
-    - 102565
-    - 102570
-    - 102615
-    - 102620
-    - 102660
-    - 102665
-    - 187600
-    - 187605
-    - 204305
-    - 204310
+    - 207505
     ys:
     - 0
     - 34
@@ -6084,30 +6566,34 @@ voice_parts:
     - 1
     - 0
     - 0
-    - 20
-    - 20
-    - 7
-    - 7
-    - 20
-    - 20
-    - 41
-    - 41
-    - 20
-    - 20
-    - 19
-    - 19
-    - 18
-    - 18
-    - 17
-    - 17
-    - 16
-    - 16
-    - 15
-    - 15
-    - 14
-    - 14
-    - 13
-    - 13
+    abbr: cl04
+  - xs:
+    - 70065
+    - 70070
+    - 101650
+    - 101655
+    - 101675
+    - 101680
+    - 101700
+    - 101710
+    - 101725
+    - 101735
+    - 101765
+    - 101795
+    - 101810
+    - 101820
+    - 101840
+    - 101850
+    - 101865
+    - 101875
+    - 101895
+    - 101900
+    - 101940
+    - 101950
+    - 101955
+    - 106345
+    ys:
+    - 0
     - 12
     - 12
     - 11
@@ -6115,10 +6601,9 @@ voice_parts:
     - 10
     - 10
     - 9
+    - 9
     - 8
     - 8
-    - 7
-    - 7
     - 6
     - 6
     - 5
@@ -6128,17 +6613,10 @@ voice_parts:
     - 3
     - 3
     - 2
-    - 2
     - 1
     - 1
     - 0
     - 0
-    - 72
-    - 72
-    - 0
-    abbr: cl04
-  - xs: []
-    ys: []
     abbr: cl03
   - xs: []
     ys: []
